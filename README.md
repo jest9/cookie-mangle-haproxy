@@ -1,19 +1,14 @@
-# haproxy-lua
+# Cookie Mangler for Haproxy
 
-quick and easy cookie encryption/decryption at haproxy reverse proxy via lua.
+Quick and easy cookie encryption/decryption at haproxy reverse proxy via lua.
 
-used this cool library here : https://github.com/zhaozg/lua-openssl
+# setup
+This uses the [openssl library](https://github.com/zhaozg/lua-openssl) from luarocks to handle the actual encryption.
 
- # setup
- uses openssl library from luarocks
- install luarocks following the steps from https://luarocks.org/
+Install luarocks following the steps from https://luarocks.org/ and then install the openssl package.
  
- ```
- sudo luarocks install openssl
- ```
+```
+sudo luarocks install openssl
+```
 
- make sure it is installed to the correct directory, the same dir for the version of lua your haproxy installation is using.
-
- # future improvements
-
- may write my own lua wrapper for openssl so I don't have to use library
+Make sure to install in the same directory for the version of lua your haproxy installation is using.
