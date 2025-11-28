@@ -1,4 +1,4 @@
-# Cookie Mangler for Haproxy
+# cookie mangler via haproxy
 
 Quick and easy cookie encryption/decryption at haproxy reverse proxy via lua.
 
